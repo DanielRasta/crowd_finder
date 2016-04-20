@@ -1,5 +1,5 @@
-require "./kickstarter_finder"
-require "./headstart_finder"
+require "kickstarter_finder"
+require "headstart_finder"
 
 class FindersFactory
 

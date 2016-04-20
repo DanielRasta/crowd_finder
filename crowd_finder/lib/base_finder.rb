@@ -1,5 +1,5 @@
-require "./abstract_interface"
-require "./sites_module"
+require "abstract_interface"
+require "sites_module"
 require 'json'
 require 'time'
 
@@ -73,5 +73,8 @@ class BaseFinder
   def test_print
     BaseFinder.api_not_implemented(self)
   end
-
+  
+  def goal
+    BaseFinder.api_not_implemented(self)
+  end
 end

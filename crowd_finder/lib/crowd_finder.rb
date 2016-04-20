@@ -1,8 +1,8 @@
 # CrowdFinder.new('http://www.headstart.co.il/project.aspx?id=18568')
 
 
-require "./finders_factory"
-require "./sites_module"
+require "finders_factory"
+require "sites_module"
 
 
 module CrowdFinder

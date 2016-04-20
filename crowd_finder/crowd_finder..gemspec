@@ -17,11 +17,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'json'
-  spec.add_dependency 'time'
-  spec.add_dependency 'open-uri'
-  spec.add_dependency 'open_uri_redirections'
-  spec.add_dependency 'nokogiri'
-  spec.add_dependency 'uri'
+  spec.add_development_dependency 'json' 
+  spec.add_development_dependency 'time' 
+  spec.add_development_dependency 'open-uri'
+  spec.add_development_dependency 'open_uri_redirections'
+  spec.add_development_dependency 'nokogiri'
+  spec.add_development_dependency 'uri'
 
 end

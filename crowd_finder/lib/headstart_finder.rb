@@ -1,4 +1,4 @@
-require './base_finder'
+require 'base_finder'
 
 class HeadstartFinder < BaseFinder
 
