@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["Daniel@shake.cards"]
   spec.description   = %q{Get all the data you need from crowdfunding campaigns}
   spec.summary       = %q{Crowd funding sites scraper}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/DanielRasta/crowd_finder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
