@@ -15,7 +15,7 @@ class HeadstartFinder < BaseFinder
   end
   
   def days_to_go
-    @body.css('.projectstatus').css('.bb').css('.l').css('div')[0].text.gsub("\n", ' ').gsub("\r", ' ').squeeze(' ')
+    @body.css('.projectstatus').css('.bb').css('.l').css('div')[0].text.gsub("\n", ' ').gsub("\r", ' ').squeeze(' ').scan(/\d+/).join(",")
     rescue => e
       ""
   end
@@ -35,13 +35,13 @@ class HeadstartFinder < BaseFinder
   end
 
   def pledged
-    @body.css('.projectstatus').css('.cu').text.gsub('\n', '').gsub("\n", ' ').gsub("\r", ' ').squeeze(' ')
+    @body.css('.projectstatus').css('.cu').text.gsub('\n', '').gsub("\n", ' ').gsub("\r", ' ').squeeze(' ').scan(/\d+/).join(",")
     rescue => e
       ""
   end
 
   def goal
-    @body.css('.projectstatus').css('.pl').text.gsub('\n', '').gsub("\n", ' ').gsub("\r", ' ').squeeze(' ')
+    @body.css('.projectstatus').css('.pl').text.gsub('\n', '').gsub("\n", ' ').gsub("\r", ' ').squeeze(' ').scan(/\d+/).join(",")
     rescue => e
       ""
   end

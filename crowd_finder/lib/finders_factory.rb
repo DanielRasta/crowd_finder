@@ -7,11 +7,12 @@ class FindersFactory
     case p_shape
       when :kickstarter
         ret_class = KickstarterFinder.new
+        ret_class.set(p_url)
       when :headstart
         ret_class = HeadstartFinder.new
+        ret_class.set(p_url)
     end
-
-    ret_class.set(p_url)
+    
     return ret_class
   end
 end
