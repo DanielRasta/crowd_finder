@@ -30,7 +30,8 @@ class BaseFinder
               :backers_count => num_of_backers,
               :twitter_link => twitter_link,
               :pledged => pledged,
-              :goal => goal}
+              :goal => goal,
+              :picture_url => picture_url}
     return JSON.generate(my_hash)
     rescue => e
       ""
@@ -53,6 +54,10 @@ class BaseFinder
   end
   
   # Implementation
+
+  def picture_url
+    BaseFinder.api_not_implemented(self)
+  end
 
   def project_name
     BaseFinder.api_not_implemented(self)

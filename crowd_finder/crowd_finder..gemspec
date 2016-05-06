@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "crowd_finder"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.5"
   spec.authors       = ["Daniel Ziv"]
   spec.email         = ["Daniel@shake.cards"]
   spec.description   = %q{Get all the data you need from crowdfunding campaigns}

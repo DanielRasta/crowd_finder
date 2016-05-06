@@ -34,12 +34,14 @@ Just use the full campaign url and create a finder!
 	=> "$10,000"
 	findr.goal
 	=> "$100,000"
-	findr.test_print
+	findr.picture_url
+	=> "https://www.headstart.co.il/components/img.aspx?img=images\\userspics\\copy.JPG"
+	findr.test_print	
 	=> "I'm KickstarterFinder and my url is https://www.kickstarter.com/projects/thelightphone/the-light-phone"
 
 ## to_json
 	CrowdFinder.new('http://www.headstart.co.il/project.aspx?id=18568').to_json
-	=> "{\"name\":\"\\\" מה שהאהבה אומרת לי \\\"\",\"precentage\":57,\"deadline\":\"N/A\",\"days_to_go\":\" 14 ימים שנותרו \",\"backers_count\":\"135\",\"twitter_link\":\"\",\"pledged\":\" 14,910 ₪ \",\"goal\":\"מתוך 26,000 ₪\"}"
+	=> "{\"name\":\"\\\" מה שהאהבה אומרת לי \\\"\",\"precentage\":57,\"deadline\":\"N/A\",\"days_to_go\":\" 14 ימים שנותרו \",\"backers_count\":\"135\",\"twitter_link\":\"\",\"pledged\":\" 14,910 ₪ \",\"goal\":\"מתוך 26,000 ₪\",\"picture_url\":\"https://www.headstart.co.il/components/img.aspx?img=images\\userspics\\copy.JPG\"}"
 	
 ## Advanced
 To reload the HTML run

@@ -38,6 +38,19 @@ class KickstarterFinder < BaseFinder
       ""
   end
 
+  def picture_url
+    # urls
+    base = @url.split('&')[0].split('?')[0]
+    new_url = "#{base}/description"
+    # scrape again
+    source = open(new_url, :allow_redirections => :safe){|f|f.read}
+    page = Nokogiri::HTML(source)
+    # lookup
+    page.css('.video-player').css('img')[0]['src']
+    rescue => e
+      ""
+  end
+
   # Override
 
   def deadline

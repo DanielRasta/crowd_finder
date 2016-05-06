@@ -46,4 +46,10 @@ class HeadstartFinder < BaseFinder
       ""
   end
 
+  def picture_url
+    "https://www.headstart.co.il/#{@body.css('.pic').css('img')[0]['src'].split('&')[0]}"
+    rescue => e
+      ""
+  end
+
 end
