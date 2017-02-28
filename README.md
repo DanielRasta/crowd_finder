@@ -7,7 +7,8 @@ The gem supports these websites:
 
 1. KickStartter
 2. HeadStart
-3. ** Maybe you're next!**
+3. IndieGoGo
+4. ** Maybe you're next!**
 
 ## How to use it?
 Simple!
