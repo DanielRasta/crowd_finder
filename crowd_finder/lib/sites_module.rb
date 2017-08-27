@@ -14,7 +14,7 @@ module Sites
   	if valid?(p_url)
       hash = {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.57.5 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.4",
         "allow_redirections"=>"safe"}
-    	source = open(p_url,  hash){|f|f.read}
+    	source = open(p_url.gsub("http://","https://"),  hash){|f|f.read}
 		  page = Nokogiri::HTML(source)
 	  end
   end
